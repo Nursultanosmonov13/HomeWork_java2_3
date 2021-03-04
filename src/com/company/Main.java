@@ -7,7 +7,9 @@ public class Main {
     public static void main(String[] args) {
         BankAccount bankAccount = new BankAccount();
         Scanner scanner = new Scanner(System.in);
-        bankAccount.deposit(20000);
+        bankAccount.deposit(8000);
+        bankAccount.deposit(500);
+        bankAccount.deposit(300);
         System.out.println("Остаток на счету " + bankAccount.getAmount());
         while (true) {
             try {

@@ -3,12 +3,14 @@ package com.company;
 public class BankAccount {
     private double amount; //остаток на счете
 
-    public double getAmount() {  //возвращает текущий остаток на счете
-        return amount;
-    }
+
 
     public void deposit(double sum) { //положить деньги на счет
-        amount = sum;
+
+        amount =amount + sum;
+    }
+    public double getAmount() {  //возвращает текущий остаток на счете
+        return amount;
     }
 
     public void withDraw(int sum) throws LimitException { //снимает указанную сумму со счета.
